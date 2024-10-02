@@ -1,0 +1,13 @@
+on: push
+env:
+  TZ: Asia/Tokyo
+  LANG: ja_JP.UTF-8
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # https://github.com/sdkman/sdkman-action/issues/16
+      - uses: sdkman/sdkman-action@b1f9b696c79148b66d3d3a06f7ea801820318d0f
+      - uses: android-actions/setup-android@v4
+      - run: make test

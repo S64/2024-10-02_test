@@ -1,0 +1,85 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+}
+
+android {
+    namespace 'com.example.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.app"
+        minSdk 34
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    flavorDimensions 'fsv'
+    productFlavors {
+        fsv993 {
+            dimension 'fsv'
+        }
+        fsv994 {
+            dimension 'fsv'
+        }
+        fsv995 {
+            dimension 'fsv'
+        }
+        fsv996 {
+            dimension 'fsv'
+        }
+        fsv997 {
+            dimension 'fsv'
+        }
+        fsv998 {
+            dimension 'fsv'
+        }
+        fsv999 {
+            dimension 'fsv'
+        }
+        fsv9910 {
+            dimension 'fsv'
+        }
+    }
+}
+
+dependencies {
+    fsv993Implementation 'jp.fluct:FluctSDK:9.9.3'
+    fsv993Implementation 'jp.fluct.fluctsdk:fullscreen-ads:9.9.3'
+
+    fsv994Implementation 'jp.fluct:FluctSDK:9.9.4'
+    fsv994Implementation 'jp.fluct.fluctsdk:fullscreen-ads:9.9.4'
+
+    fsv995Implementation 'jp.fluct:FluctSDK:9.9.5'
+    fsv995Implementation 'jp.fluct.fluctsdk:fullscreen-ads:9.9.5'
+
+    fsv996Implementation 'jp.fluct:FluctSDK:9.9.6'
+    fsv996Implementation 'jp.fluct.fluctsdk:fullscreen-ads:9.9.6'
+
+    fsv997Implementation 'jp.fluct:FluctSDK:9.9.7'
+    fsv997Implementation 'jp.fluct.fluctsdk:fullscreen-ads:9.9.7'
+
+    fsv998Implementation 'jp.fluct:FluctSDK:9.9.8'
+    fsv998Implementation 'jp.fluct.fluctsdk:fullscreen-ads:9.9.8'
+
+    fsv999Implementation 'jp.fluct:FluctSDK:9.9.9'
+    fsv999Implementation 'jp.fluct.fluctsdk:fullscreen-ads:9.9.9'
+
+    fsv9910Implementation 'jp.fluct:FluctSDK:9.9.10'
+    fsv9910Implementation 'jp.fluct.fluctsdk:fullscreen-ads:9.9.10'
+}
