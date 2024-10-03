@@ -8,6 +8,4 @@
 
 ## Run test
 
-```bash
-make test
-```
+- [`/.github/workflows/test.yml`](./.github/workflows/test.yml)
